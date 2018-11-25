@@ -1,0 +1,28 @@
+[{
+    "id": 1,
+    "title": "What Is Angular?",
+    "date": "10-11-2018 12.40 p.m.",
+    "author": {
+      "id": 1,
+      "name": "Ravi Kumar T",
+      "role": "Admin"
+    },
+    "categories":["javascript", "angular"],
+    "image_path": "assets/images/post-1.jpg",
+      "bdoy": "<p>Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop</p>",
+    "public": true  
+  },
+  {
+    "id": 2,
+    "title": "Assumptions",
+    "date": "11-11-2018 10.20 a.m.",
+    "author": {
+      "id": 1,
+      "name": "Ravi Kumar T",
+      "role": "Admin"
+    },
+    "categories":["typescript", "angular"],
+    "image_path": "assets/images/post-1.jpg",
+      "bdoy": "<p>This documentation assumes that you are already familiar with <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript\" title=\"Learn JavaScript\">JavaScript</a>, and some of the tools from the <a href=\"https://babeljs.io/learn-es2015/\" title=\"Latest JavaScript standards\">latest standards</a> such as <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes\" title=\"ES2015 Classes\">classes</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import\" title=\"ES2015 Modules\">modules</a>. The code samples are written using <a href=\"https://www.typescriptlang.org/\" title=\"TypeScript\">TypeScript</a>.  Most Angular code can be written with just the latest JavaScript, using <a href=\"https://www.typescriptlang.org/docs/handbook/classes.html\" title=\"TypeScript Types\">types</a> for dependency injection, and using <a href=\"https://www.typescriptlang.org/docs/handbook/decorators.html\" title=\"Decorators\">decorators</a> for metadata.</p>",
+    "public": true  
+  }]

@@ -1,0 +1,11 @@
+ .user-entry {
+   mat-card {
+     margin-top: 10%;
+     .mat-form-field {
+       display: block;
+     }
+   }
+   mat-card-footer {
+     padding: 0 16px 16px 16px;
+   }
+ }

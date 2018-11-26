@@ -1,23 +1,30 @@
 <div class="row justify-content-center user-entry">
-  <div class="col col-md-4">
-      <mat-card>
-          <mat-card-title>Welcome Guest!</mat-card-title>
-          <mat-card-content>
-            <mat-form-field>
-              <input matInput placeholder="Enter your name" [formControl]="name" />
-            </mat-form-field>
-            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
-              <div *ngIf="name.errors.required">
-                Name is required.
-              </div>
-              <div *ngIf="name.errors.minlength">
-                Name must be at least 4 characters long.
-              </div>
-            </div>
-          </mat-card-content>
-          <mat-card-footer>
-            <button mat-raised-button color="primary" [disabled]="name.invalid" (click)="setName()">Submit</button>
-          </mat-card-footer>
-        </mat-card>
-  </div>
+  <form [formGroup]="userForm" class="col col-md-4">
+    <mat-card>
+      <mat-card-title>Welcome Guest!</mat-card-title>
+      <mat-card-content>
+        <mat-form-field>
+          <input matInput placeholder="Enter your name" formControlName="name" />
+        </mat-form-field>
+        <div *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)" class="mb-2 text-danger">
+          <span *ngIf="f.name.errors.required">
+            Name is required.
+          </span>
+          <span *ngIf="f.name.errors.minlength">
+            Name must be at least 4 characters long.
+          </span>
+        </div>
+        <label>Enter your mobile number:</label>
+        <p-inputMask mask="(999) 999-9999" placeholder="ex: (999) 999-9999" formControlName="phone"></p-inputMask>
+        <div *ngIf="f.phone.invalid && (f.phone.dirty || f.phone.touched)" class="mb-2 text-danger">
+          <span *ngIf="f.phone.errors.required">
+            Mobile number is required.
+          </span>
+          </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" [disabled]="userForm.invalid" (click)="setName()">Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
 </div>

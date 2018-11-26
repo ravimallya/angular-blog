@@ -5,7 +5,12 @@
        display: block;
      }
    }
-   mat-card-footer {
-     padding: 0 16px 16px 16px;
+   p-inputmask {
+     display: block;
+     input[type="text"] {
+       width: 100%;
+     display: block !important;
+     }
    }
  }
+ 

@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// prime ng
+import {InputMaskModule} from 'primeng/inputmask';
+// loading bar
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 // angular material
 import {MatToolbarModule,
   MatButtonModule,
@@ -37,6 +42,11 @@ import { HandleUserService } from './services/handle-user.service';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    // prmie ng
+    InputMaskModule,
+    // loading bar
+    LoadingBarHttpClientModule,
+    LoadingBarRouterModule,
     // material modules
     MatToolbarModule,
     MatButtonModule,

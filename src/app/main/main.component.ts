@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostsService } from '../services/posts.service';
 
 @Component({
   selector: 'app-main',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-
-  constructor() { }
+postsData: any[];
+  constructor(private postsService: PostsService) { }
 
   ngOnInit() {
+    this.postsService.getJSON().subscribe(data => {
+      console.log(data);
+      this.postsData = data;
+    });
   }
 
 }
